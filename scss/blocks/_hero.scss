@@ -1,1 +1,105 @@
 // bu yerda hero bor
+
+.hero-wrapper {
+    background-image: url(../images/Hero.png);
+    background-size: cover;
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+    .hero-wrapper {
+        background-image: url(../images/Hero@2x.png);
+    }
+
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding-bottom: 140px;
+
+
+    &__span-wrapper {
+        margin-bottom: 20px;
+    }
+
+    &__span {
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.15em;
+        color: #FFFFFF;
+    }
+
+    &__span::after {
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        background-image: url(../images/Ellipse.png);
+        position: relative;
+        top: -3px;
+        margin-left: 18px;
+    }
+
+    &__span-personal {
+        margin-left: 18px;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.15em;
+        color: #FFFFFF;
+    }
+
+    &__heading {
+        width: 650px;
+        margin: 0;
+        margin-bottom: 17px;
+        font-weight: 600;
+        font-size: 66px;
+        line-height: 70px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+    }
+
+    &__desc {
+        width: 545px;
+        margin: 0;
+        line-height: 28px;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        opacity: 0.7;
+    }
+
+    &__btn-wrapper {
+        margin-top: 45px;
+        margin-bottom: 70px;
+    }
+
+    &__last-span {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.13em;
+        color: #FFFFFF;
+    }
+
+    &__img-wrapper {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    &__img + &__img {
+        margin-left: 22px;
+    }
+
+    &__last-img {
+        margin-left: -30px;
+    }
+}
