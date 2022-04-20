@@ -666,6 +666,8 @@ img {
 .latest__item {
   width: 377px;
   margin: 15px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .latest__item > img {
@@ -759,7 +761,7 @@ img {
 }
 
 .meet-your {
-  padding-bottom: 100px;
+  padding-bottom: 90px;
 }
 
 .meet-your__img {
@@ -870,6 +872,11 @@ img {
           align-items: center;
   margin: 0;
   padding: 0;
+}
+
+.topics__item {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .topics__item + .topics__item {
