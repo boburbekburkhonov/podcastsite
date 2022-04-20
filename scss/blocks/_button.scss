@@ -50,3 +50,20 @@
         opacity: 0.4;
     }
 }
+
+.touch-form-submit-btn {
+    color: #fff;
+    background: linear-gradient(265.37deg, #9224D6 -49.74%, #BD87DE 116.53%);
+    border-radius: 5px;
+    padding: 12px 36px;
+}
+
+.touch-form-submit-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.touch-form-submit-btn:active {
+    cursor: pointer;
+    opacity: 0.4;
+}

@@ -1,0 +1,54 @@
+.touch {
+    padding-bottom: 100px;
+  }
+
+  .touch-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #0EA3E3, #17044D, #6C22C9);
+    border-radius: 10px;
+    height: 428px;
+    width: 1192px;
+  }
+
+  .touch-heading {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+
+  .touch-desc {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.7;
+    margin-bottom: 49px;
+  }
+
+  .touch-form-email {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 36px;
+    padding-right: 214px;
+  }
+
+  .touch-form-email::placeholder {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 3px;
+  }
