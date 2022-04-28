@@ -1,24 +1,28 @@
 // bu yerda hero bor
 
 .hero-wrapper {
-    background-image: url(../images/Hero.png);
-    background-size: cover;
+    // background-image: url(../images/Hero.png);
+    // background-size: cover;
+    background-image: linear-gradient(to right, #8FDEFF, #0EA3E3, #17044D, #6C22C9);
+    background-size: 400% 400%;
+    animation: animate-background 10s infinite ease-in-out;
 }
 
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
+
+// @media
+// only screen and (-webkit-min-device-pixel-ratio: 2),
+// only screen and (   min--moz-device-pixel-ratio: 2),
+// only screen and (     -o-min-device-pixel-ratio: 2/1),
+// only screen and (        min-device-pixel-ratio: 2),
+// only screen and (                min-resolution: 192dpi),
+// only screen and (                min-resolution: 2dppx) {
 
     .hero-wrapper {
         background-image: url(../images/Hero@2x.png);
     }
 
-}
+
 
 .hero {
     display: flex;
@@ -102,4 +106,17 @@ only screen and (                min-resolution: 2dppx) {
     &__last-img {
         margin-left: -30px;
     }
+
 }
+
+@keyframes animate-background{
+    0%{
+      background-position: 0 50%
+    }
+    50%{
+      background-position: 100% 50%
+    }
+    100%{
+      background-position: 0 50%
+    }
+  }

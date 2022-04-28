@@ -550,14 +550,15 @@ img {
 }
 
 .hero-wrapper {
-  background-image: url(../images/Hero.png);
-  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(#8FDEFF), color-stop(#0EA3E3), color-stop(#17044D), to(#6C22C9));
+  background-image: linear-gradient(to right, #8FDEFF, #0EA3E3, #17044D, #6C22C9);
+  background-size: 400% 400%;
+  -webkit-animation: animate-background 10s infinite ease-in-out;
+          animation: animate-background 10s infinite ease-in-out;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .hero-wrapper {
-    background-image: url(../images/Hero@2x.png);
-  }
+.hero-wrapper {
+  background-image: url(../images/Hero@2x.png);
 }
 
 .hero {
@@ -649,6 +650,30 @@ img {
 
 .hero__last-img {
   margin-left: -30px;
+}
+
+@-webkit-keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 .latest {
@@ -926,8 +951,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(#0EA3E3), color-stop(#17044D), to(#6C22C9));
-  background-image: linear-gradient(to right, #0EA3E3, #17044D, #6C22C9);
+  background: -webkit-gradient(linear, rigth, from(#833ab4), color-stop(#fd1d1d), to(#fcb045));
+  background: linear-gradient(to rigth, #833ab4, #fd1d1d, #fcb045);
+  background-size: 400% 400%;
+  -webkit-animation: animate-background 10c infinite ease-in-out;
+          animation: animate-background 10c infinite ease-in-out;
   border-radius: 10px;
   height: 428px;
   width: 1192px;
@@ -990,6 +1018,18 @@ img {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 3px;
+}
+
+@keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 .footer__container {
